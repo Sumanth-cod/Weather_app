@@ -25,7 +25,7 @@ let weatherData = async (lat, lon) => {
     let forecastContainer = document.getElementById("Future_data").querySelector(".row");
     forecastContainer.innerHTML = "";
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         let dayData = data.list[i * 8];
         let temp = Math.round(dayData.main.temp);
         let description = dayData.weather[0].description;
